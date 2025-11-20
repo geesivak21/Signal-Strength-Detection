@@ -93,7 +93,7 @@ if predict_btn:
         data.drop_duplicates(inplace=True)
 
         # Scale Input Features
-        scaled_data = scaler.transform(data)
+        scaled_data = scaler.fit_transform(data)
 
         # Predict
         predictions = model.predict(scaled_data)
