@@ -27,11 +27,11 @@ label_reverse_map = {0:3, 1:4, 2:5, 3:6, 4:7, 5:8}
 
 st.info("Download the sample **test.csv** file, fill it with your own data, and upload it below.")
 
-with open("sample_test.csv", "rb") as f:
+with open("test.csv", "rb") as f:
     st.download_button(
         label="⬇️ Download Sample CSV",
         data=f,
-        file_name="sample_test.csv",
+        file_name="test.csv",
         mime="text/csv"
     )
 
